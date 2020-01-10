@@ -47,7 +47,6 @@ int BezoutQ(int a, int b){
         return 1;
     }
     else{
-        // Este return está mal planteado. q' debe tener el mismo símbolo que p
         return (BezoutP(b,a%b)-(BezoutQ(b,a%b)*(a/b)));
     }
 }
